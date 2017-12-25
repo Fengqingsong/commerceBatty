@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./less/index.less">
+    <script src="./less/less.js"></script>
+</head>
+
+<body>
+    <div id="layout">
+        <header id="topbar">
+            <a href="" class="topbar-nav">
+                <i class="glyphicon glyphicon-menu-hamburger"></i>
+            </a>
+            <span>哈哈哈</span>
+            <a href="" class="topbar-search glyphicon glyphicon-search"></a>
+        </header>
+        <section id="slide">
+            <ul class="clearfix">
+                <!-- <li>
+                    <a href="">
+                        <img src="./images/cp5.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/cp6.jpg" alt="">
+                    </a>
+                </li> -->
+            </ul>
+            <div class="state">
+                <ol class="clearfix">
+                    <li class="active"></li>
+                    <li></li>
+                </ol>
+            </div>
+
+        </section>
+        <section id="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <a href="#">点击获取</a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="#">点击获取</a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="#">点击获取</a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="#">点击获取</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a href="#">
+                            <img src="./images/icon-cart.png" alt="">
+                            <span></span>
+                        </a>
+                        <p>点击</p>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#">
+                            <img src="./images/icon-cart.png" alt="">
+                            <span></span>
+                        </a>
+                        <p>点击</p>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#">
+                            <img src="./images/icon-cart.png" alt="">
+                            <span></span>
+                        </a>
+                        <p>点击</p>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#">
+                            <img src="./images/icon-cart.png" alt="">
+                            <span></span>
+                        </a>
+                        <p>点击</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
+    <!-- <script src="./lib/bootstrap/js/bootstrap.js"></script> -->
+    <script src="./lib/template-web/template-web.js"></script>
+    <script src="./js/index.js"></script>
+    <script id='moban' type='text/html'>
+        {{each}}
+        <li>
+            <a href="{{$value.url}}">
+                <img src="{{$value.img}}" alt="">
+            </a>
+        </li>
+        {{/each}}
+    </script>
+</body>
+
+</html>
